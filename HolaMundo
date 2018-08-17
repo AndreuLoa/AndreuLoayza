@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	cout<<"hola mundo"<<endl;
+	cout<<"soy Andreu Loayza";
+	getch();
+}
+
+
+
+
+
+
+
+
+
+****************************
+
+
+Proceso sin_titulo
+	Escribir 'Hola mundo'
+FinProceso
