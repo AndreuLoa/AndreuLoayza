@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	cout<<"Bolivianos el hado propicio"<<endl;
+cout<<"Corono nuestros votos y anhelo"<<endl;
+cout<<"Es ya libre ya libre este suelo"<<endl;   
+cout<<"Ya ceso su servil condicion";   
+	getch();
+}
+
+
+solo esta aqui por si acaso no es el himno
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float b, h, a;
+	cout<<"introduzca la base:"<<endl;
+	cin>>b;
+	cout<<"introduzca la altura ";
+	cin>>h;
+	a=b*h/2;
+	cout<<"aqui esta la area del triangulo ";
+	cout<<a;
+	getch();
+}
+
