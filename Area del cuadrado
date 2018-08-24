@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+    float l,a;
+	cout<<"introdusca el lado:";
+	cin>>l;
+	a=l*l;
+	cout<<"este es su area del cuadrado "<<a;
+	getch();
+    
+}
+
+
+///////////////////////////////////////////////////////
+
+
+Algoritmo sin_titulo
+	escribir "introdusca el lado:"
+	Leer l
+	A = l*l
+	Escribir "aqui esta el area:", A
+FinAlgoritmo
