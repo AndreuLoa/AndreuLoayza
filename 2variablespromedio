@@ -1,0 +1,46 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	int a, b;
+    cout<<"introduzca el primer valor:";
+		cin>>a;
+	cout<<"introduzca el segundo valor:";
+		cin>>b;
+	b=b+a;
+	cout<<"introduzca el tercer valor:";
+		cin>>a;
+	b=b+a;
+	cout<<"introduzca el cuarto valor:";
+		cin>>a;
+	b=b+a;
+	cout<<"introduzca el quinto valor:";
+		cin>>a;
+	b=b+a;
+	a=b/5;
+	cout<<"este es su promedio:"<<a;
+	getch();
+}
+////////////////////////////////////////////////////
+Algoritmo sin_titulo
+	Escribir 'introducir primer dato:'
+	Leer a
+	Escribir 'introducir segundo dato:'
+	Leer b
+	b=a+b
+	Escribir 'introducir tercer dato:'
+	leer a
+	b=a+b
+	Escribir 'introducir cuarto dato:'
+	leer a
+	b=a+b
+	Escribir 'introducir quinto dato:'
+	leer a
+	b=(a+b)/5
+	
+	Escribir 'el promedio es:', b
+FinAlgoritmo
