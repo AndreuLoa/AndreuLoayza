@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	float b, h, a;
+	cout<<"introducir base del paralelogramo:";
+	cin>>b;
+	cout<<"introducir altura del paralelogramo:";
+	cin>>h;
+	a=b*h;
+	cout<<"este es el area del paralelogramo "<<a;
+	getch();
+}
+
+
+///////////////////////////////////////////////////
+Algoritmo sin_titulo
+	escribir "introdusca la base del paralelogramo:"
+	Leer b
+	escribir "introdusca la altura del paralelogramo:"
+	Leer h
+	A = b*h
+	Escribir "aqui esta el area de su paralelogramo:", A
+FinAlgoritmo
