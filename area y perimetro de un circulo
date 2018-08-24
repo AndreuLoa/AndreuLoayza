@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	double r, p=3.14159, a, pe;
+	cout<<"introdusca el radio:";
+	cin>>r;
+	a=r*r*p;
+	pe=2*p*r;
+	cout<<"este es su area del circulo "<<a<<endl;
+	cout<<"este es su perimetro del circulo "<<pe;
+	getch();
+}
+///////////////////////////////////////////////////////////
+Algoritmo sin_titulo
+	escribir 'introdusca el radio'
+	leer r
+	a=r*r*3.14159
+	p=2*r*3.14159
+	escribir 'este es area de su circulo:', a
+	escribir 'este es el perimetro de su circulo:', p
+FinAlgoritmo
