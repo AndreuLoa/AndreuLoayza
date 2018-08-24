@@ -14,24 +14,11 @@ cout<<"Ya ceso su servil condicion";
 }
 
 
-solo esta aqui por si acaso no es el himno
+/////////////////////////////////////////////////////////
 
-#include "stdafx.h"
-#include <iostream>
-#include "conio.h"
-
-using namespace std;
-
-void main()
-{
-	float b, h, a;
-	cout<<"introduzca la base:"<<endl;
-	cin>>b;
-	cout<<"introduzca la altura ";
-	cin>>h;
-	a=b*h/2;
-	cout<<"aqui esta la area del triangulo ";
-	cout<<a;
-	getch();
-}
-
+Algoritmo sin_titulo
+	Escribir "¡Bolivianos!... ¡el hado propicio;"
+	escribir "Coronó nuestros votos y anhelo!..."
+	escribir "Es ya libre, ya libre este suelo,"
+	escribir "Ya cesó su servil condición."
+FinAlgoritmo
