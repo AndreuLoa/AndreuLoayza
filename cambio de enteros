@@ -1,0 +1,34 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	int a, b, aux;
+	cout<<"introducir dato 1:";
+	cin>>a;
+	cout<<"introducir dato 2:";
+	cin>>b;
+	aux=a;
+	a=b;
+	b=aux;
+	cout<<"el dato 1 ahora es "<<a<<endl;
+	cout<<"el dato 2 ahora es "<<b;
+	getch();
+	
+}
+
+/////////////////////////////////////////////////////////
+Algoritmo sin_titulo
+	Escribir 'introducir dato 1:'
+	Leer a
+	Escribir 'introducir dato 2:'
+	Leer b
+	aux=a
+	a=b
+	b=aux
+	Escribir 'el dato 1 ahora es:', a
+	Escribir 'el dato 2 ahora es:', b
+FinAlgoritmo
