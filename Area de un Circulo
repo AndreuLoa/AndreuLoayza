@@ -7,7 +7,7 @@ using namespace std;
 void main ()
 {
 	double r, p=3.14159, a;
-	cout<<"introdusca el radio:";
+	cout<<"introduzca el radio:";
 	cin>>r;
 	a=r*r*p;
 	cout<<"este es su area "<<a;
@@ -18,7 +18,7 @@ void main ()
 //////////////////////////////////////////////////////////////////////
 
 Algoritmo sin_titulo
-	escribir 'introdusca el radio'
+	escribir 'introduzca el radio'
 	leer r
 	a=r*r*3.14159
 	escribir 'este es area de su circulo:', a
