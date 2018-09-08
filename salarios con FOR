@@ -1,0 +1,15 @@
+cout<<"cuantos empeados va a calcular?"<<endl;
+cin>>n;
+for (i=1;i<=n;i++)
+{
+	cout<<"intorduzca el salario bruto"<<endl;
+	cin>>sb;
+	if (sb>=(4*sm))
+		sn=sb-(sb*0.251);
+	else
+		sn=sb-(sb*0.121);
+	cout<<"su salario neto es:"<<sn<<endl;
+}
+	getch();
+}
+ 
