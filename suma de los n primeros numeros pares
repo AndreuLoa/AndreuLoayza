@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int a,p=0,sum,i=0,n;
+	cout<<"introduzaca cuantas variable va a sumar"<<endl;
+	cin>>n;
+	do 
+	{ 
+		p=p+2;
+		sum=sum+p;
+		i++;
+	}
+	while (i<n);
+	cout<<"esta es su suma:"<<sum;
+	getch();
+}
