@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+double x1,x2,a,b,c,z;
+cout<<"introduzca a"<<endl;
+cin>>a;
+cout<<"introduzca b"<<endl;
+cin>>b;
+cout<<"introduzca c"<<endl;
+cin>>c;
+
+z=(pow(b,2)-(4*a*c));
+x1=(-b+sqrt(z))/(2*a);
+x2=(-b-sqrt(z))/(2*a);
+
+cout<<"el valor de x con positivo es:"<<x1<<endl;
+cout<<"el valor de x con negativo es:"<<x2<<endl;
+
+if (z<0)
+	cout<<"y los resultados son imaginarios"<<endl;
+if (z==0)
+	cout<<"y es x es un valor unico"<<endl;
+if (z>0)
+	cout<<"y los valores son reales"<<endl;
+getch();
+}
