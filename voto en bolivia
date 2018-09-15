@@ -1,0 +1,38 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	int a,b,c,d,e,i,n;
+	cout<<"cuantas personas van a usar el programa?"<<endl;
+	cin>>n;
+	for (i=1;i<=n;i++)
+	{
+	cout<<"responde 1 para si y 0 para no"<<endl;
+	cout<<"tiene mas de 18 años?"<<endl;
+	cin>>a;
+	cout<<"tiene antecedentees penales?"<<endl;
+	cin>>b;
+	cout<<"tiene nacionalidad boliviana?"<<endl;
+	cin>>c;
+	cout<<"planea participar el votacion municipal (1) o presidencial (0)?"<<endl;
+	cin>>d;
+	
+	if (a==1 && b==0)
+		{
+		if ((c==1 && d==1) || (c==1 && d==0 ) || (c==0 && d==1))
+			cout<<"usted puede votar"<<endl;
+		else
+			cout<<"usted no puede votar"<<endl;
+		}
+	else
+		cout<<"usted no puede votar"<<endl;
+
+	cout<<""<<endl;
+	}
+getch();
+}
+
