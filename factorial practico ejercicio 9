@@ -1,0 +1,45 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+double SERIE (float x, float n);
+void main (){
+    float x,n;
+	cout<<"ingrese su x"<<endl;
+	cin>>x;
+	cout<<"cuantos terminaos quiere calcular?"<<endl;
+	cin>>n;
+	cout<<"la suma de sus terminos es: ";
+	cout<<SERIE(x,n);
+	getch();
+}
+
+double SERIE (float x, float n)
+{
+	float s,a;
+	int i, f=1;
+	for (i=1;i<=n;i++)
+	{
+		if (i % 2==0)
+		{
+			f=f*i;
+			a=-(pow(x,i)/f);
+		}
+		else
+		{
+			f=f*i;
+			a=pow(x,i)/f;
+		}
+	s=s+a;
+	}
+	return s;
+}
+
+
+
+
+
