@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+
+
+using namespace std;
+
+void frase(string dato);
+
+void main (){
+	string dato;
+	cout<<"introduzca su frase:"<<endl;
+	getline(cin,dato);
+	frase(dato);
+	getch();
+}
+
+void frase(string dato){
+	int i,v=0,c=0,p=1;
+	for (i=0; i<(dato.length()); i++)
+	{
+		if (dato[i] == 'a' || dato[i] == 'e' || dato[i] == 'i' || dato[i] == 'o' || dato[i] == 'u')
+			v=v+1;
+		if (dato[i] != 'a' && dato[i] != 'e' && dato[i] != 'i' && dato[i] !='o' && dato[i] != 'u' && dato[i] != ' ' )
+			c=c+1;
+		if (dato[i] == ' ')
+			p=p+1;
+	}
+	cout<<"vocales:"<<v<<endl;
+	cout<<"consonantes:"<<c<<endl;
+	cout<<"palabras:"<<p<<endl;
+}
