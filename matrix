@@ -1,0 +1,105 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define max 100
+
+using namespace std;
+
+void cargar(int matrix[max][max], int &m, int &n);
+void mostrar(int matrix[max][max], int m, int n);
+void mayor(int matrix[max][max], int m, int n);
+void clasificar (int matrix[max][max], int m, int n);
+void mio (int matrix[max][max], int m, int n);
+
+void main()
+{
+int op,matrix[max][max],m=0,n=0;
+do {
+cout<<"-------menu--------"<<endl;
+cout<<"1.cargar"<<endl;
+cout<<"2.mostrar"<<endl;
+cout<<"3.mayor"<<endl;
+cout<<"4.clasificar"<<endl;
+cout<<"5.ejercicio de matriz booleana"<<endl;
+cout<<"0. salir"<<endl;
+cin>>op;
+switch(op){
+	case 1: cargar(matrix,m,n); break;
+	case 2: mostrar(matrix,m,n); break;
+	case 3: mayor(matrix,m,n); break;
+	case 4: clasificar(matrix,m,n); break;
+	case 5: mio(matrix,m,n);break;
+	case 0: cout<<"saliendo"; break;
+	default: cout<<"error...saliendo"; op=0;
+	}
+}while(op!=0);
+}
+
+void cargar(int matrix[max][max], int &m, int &n)
+{int n,m;
+cout<<"intro columnas"<<endl;
+cin>>m;
+cout<<"Intro lineas"<<endl;
+cin>>n;
+for (int i=0;i<n;i++)
+	{
+	for (int j=0;j<m;j++)
+		{cout<<"introduzca su valor "<<i<<","<<j<<endl;
+		cin>>matrix[i][j];
+		}
+	}
+}
+void mostrar(int matrix[max][max], int m, int n)
+{int j,i;
+	for (i=0;i<n;i++)
+	{
+	for (j=0;j<m;j++)
+		cout<<"Su valor en "<<i<<","<<j<<" es:"<<matrix[i][j]<<endl;
+	}
+}
+void mayor(int matrix[max][max], int m, int n)
+{	int aux=-99999;
+	for (int i=0;i<n;i++)
+	{
+	for (int j=0;j<m;j++)
+		{if (matrix[i][j]>aux)
+			aux=matrix[i][j];
+		}
+	}
+	cout<<"Su valor mayor es:"<<aux<<endl;
+}
+void clasificar (int matrix[max][max], int m, int n)
+{
+	int aux;
+	for (int i=0;i<n;i++)
+	{
+		for (int j=0;j<m;j++)
+		{	for (int z=1+j;z<m-1;z++)
+			{
+				if (matrix[i][z]>matrix[i][j])
+				{
+				aux=matrix[i][j];
+				matrix[i][j]=matrix[i][z];
+				matrix[i][z]=aux;
+				}
+			}
+		}
+	}
+}
+void mio (int matrix[max][max], int m, int n)
+{	int aux;
+	for (int i=0;i<n;i++)
+	{
+		for (int j=0;j<m;j++)
+		{	if (matrix[i][j]==1)
+			{  
+				for (int z=0;z<n;z++)
+				{matrix[z][j]=1;
+				}
+				for (int a=0;a<m;a++)
+				{matrix[i][a]=1;
+				}
+			}
+		}
+	}
+}
